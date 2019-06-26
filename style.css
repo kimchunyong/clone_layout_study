@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+
+#wrapper{
+    
+}
+
+
+/*
+ * header
+ */
+#header{
+    display:flex;
+    flex-direction: column;
+}
+
+#header > .header__top{
+    display: flex;
+    flex-direction: row;
+    border:1px solid #f2f2f2;
+}
+
+#header > .header__top > .header__slc{
+    
+}
+
+#header > .header__top > .header__weather{
+
+}
+
+#header > .header__top > .header__logo{
+
+}
+
+#header > .header__top > .header__login{
+
+}
+
+#header > .header__bottom > nav{
+    display: flex;
+    flex-direction: row;
+    border:1px solid #f2f2f2;
+}
+
+#header > .header__bottom > nav > .header__hamb-btn,#header > .header__bottom > nav > .header__search{
+    flex:none;
+    width:88px;
+    height:88px;
+    border-right:1px solid #f2f2f2;
+    border-left:1px solid #f2f2f2;
+}
+
+#header > .header__bottom > nav > .header__menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
