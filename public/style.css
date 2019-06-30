@@ -1,56 +1,58 @@
 @charset "utf-8";
-
-*,body{
+*,
+body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 30px;
-    color:#999;
+    color: #999;
 }
 
-#wrapper{
-    
+#wrapper {
+    min-width: 1440px;
+    margin: 0 auto;
 }
 
 
 /*
  * header
  */
-#header{
-    display:flex;
+
+#header {
+    display: flex;
     flex-direction: column;
 }
 
-#header > .header__top{
+#header>.header__top {
     display: flex;
     height: 88px;
     padding: 0 40px 0 22px;
     flex-direction: row;
     align-items: center;
-    border:2px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-bottom: 0;
 }
 
-#header > .header__top > .header__slc > select{
-    border:0;
-    color:#999;
+#header>.header__top>.header__slc>select {
+    border: 0;
+    color: #999;
 }
 
-#header > .header__top > .header__weather{
+#header>.header__top>.header__weather {
     margin-left: 44px;
 }
 
-#header > .header__top > .header__weather >.weather__tmp{
-    color:#666;
+#header>.header__top>.header__weather>.weather__tmp {
+    color: #666;
 }
 
-#header > .header__top > .header__weather > .weather__tmp-bg{
-    padding:0 21px 0 17px;
+#header>.header__top>.header__weather>.weather__tmp-bg {
+    padding: 0 21px 0 17px;
     background: url(./img/tmp_ico.png) right 4px no-repeat;
 }
 
-#header > .header__top > .header__logo{
+#header>.header__top>.header__logo {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -61,32 +63,32 @@
     text-indent: -99999px;
 }
 
-#header > .header__top > .header__login{
+#header>.header__top>.header__login {
     position: absolute;
     right: 40px;
 }
 
-#header > .header__top > .header__login > img{
+#header>.header__top>.header__login>img {
     padding-right: 6px;
 }
 
-#header > .header__bottom > nav{
+#header>.header__bottom>nav {
     display: flex;
     flex-direction: row;
-    border:2px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
 }
 
-#header > .header__bottom > nav > .header__hamb-btn,
-#header > .header__bottom > nav > .header__search{
+#header>.header__bottom>nav>.header__hamb-btn,
+#header>.header__bottom>nav>.header__search {
     position: relative;
-    flex:none;
-    width:88px;
-    height:88px;
-    border-right:2px solid #f2f2f2;
-    border-left:2px solid #f2f2f2;
+    flex: none;
+    width: 88px;
+    height: 88px;
+    border-right: 2px solid #f2f2f2;
+    border-left: 2px solid #f2f2f2;
 }
 
-#header > .header__bottom > nav > .header__hamb-btn > .header__hamb__box{
+#header>.header__bottom>nav>.header__hamb-btn>.header__hamb__box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -95,7 +97,7 @@
     cursor: pointer;
 }
 
-#header > .header__bottom > nav > .header__hamb-btn > .header__hamb__box > .hamb__line{
+#header>.header__bottom>nav>.header__hamb-btn>.header__hamb__box>.hamb__line {
     display: block;
     width: 100%;
     height: 2px;
@@ -103,21 +105,114 @@
     margin-top: 5px;
 }
 
-#header > .header__bottom > nav > .header__menu{
+#header>.header__bottom>nav>.header__menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
 }
 
-#header > .header__bottom > nav > .header__menu > .menu__item > a{
+#header>.header__bottom>nav>.header__menu>.menu__item>a {
     display: block;
-    padding-left:50px;
+    padding-left: 50px;
     color: #999;
     text-decoration: none;
     font-size: 14px;
 }
 
-#header > .header__bottom > nav > .header__menu > .menu__item:first-child > a{
+#header>.header__bottom>nav>.header__menu>.menu__item:first-child>a {
     padding-left: 0;
+}
+
+#header>.header__bottom>nav>.header__search>input[name="search"] {
+    display: none;
+}
+
+#header>.header__bottom>nav>.header__search>label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: url('./img/ic_search.png') no-repeat;
+    cursor: pointer;
+}
+
+
+/*
+ * container
+ */
+
+#container {
+    background-color: #f2f2f2;
+}
+
+#container>.container__inner {
+    width: 1110px;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 330px 240px 330px 420px;
+    grid-gap: 30px;
+    grid-auto-rows: minmax(330px, auto);
+}
+
+#container>.container__inner>.cloum-item {
+    border: 1px solid #000;
+}
+
+#container>.container__inner>.cloum-item.one {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+#container>.container__inner>.cloum-item.two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+#container>.container__inner>.cloum-item.three {
+    grid-column: 4 / 4;
+    grid-row: 1 /2;
+}
+
+#container>.container__inner>.cloum-item.four {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#container>.container__inner>.cloum-item.five {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#container>.container__inner>.cloum-item.six {
+    grid-column: 4 / 4;
+    grid-row: 2 / 3;
+}
+
+#container>.container__inner>.cloum-item.seven {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+#container>.container__inner>.cloum-item.eight {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#container>.container__inner>.cloum-item.nine {
+    grid-column: 4 / 4;
+    grid-row: 3 / 4;
+}
+
+#container>.container__inner>.cloum-item.ten {
+    grid-column: 1 / 4;
+    grid-row: 4 / 4;
+}
+
+#container>.container__inner>.cloum-item.eleven {
+    grid-column: 4 / 4;
+    grid-row: 4 / 4;
 }
