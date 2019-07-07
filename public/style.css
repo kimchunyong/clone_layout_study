@@ -291,3 +291,100 @@ body {
     background: none;
     color: #B3B3B3;
 }
+
+
+/*food*/
+
+#container>.container__inner .cloum-item--food-bg {
+    background: url('./img/food_bg.png') 0 0 no-repeat;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--top {
+    position: relative;
+    height: 270px;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.6);
+    text-align: center;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--top .thums__btn {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 3px 11px;
+    color: #fff;
+    font-size: 10px;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--top .thums__btn.thums__btn--orange {
+    background-color: #F74236;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--top .thums__txt {
+    margin-top: 55px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.thums__share-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: url(./img/share_btn.png) 0 0 no-repeat;
+    text-indent: -9999px;
+    border: 0;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--body {
+    position: relative;
+    height: 60px;
+    border: 0;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--body .thums__date {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #fff;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--body .thums__people-view {
+    position: absolute;
+    top: 20px;
+    left: 215px;
+    color: #fff;
+    padding-left: 40px;
+    background: url('./img/ic_remove_red_eye.png') 0 -5px no-repeat;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--body .thums__people-comments {
+    position: absolute;
+    top: 20px;
+    left: 305px;
+    color: #fff;
+    padding-left: 40px;
+    background: url('./img/ic_forum.png') 0 -5px no-repeat;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--body .thums__writer {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+}
+
+#container>.container__inner .row-item__contents-box .row-item__thums--top .thums__btn.thums__btn-news {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 9px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2px 9px;
+    border-radius: 4px;
+}
+
+.thums--health {
+    background: url('./img/placeholder.png') 0 0 no-repeat;
+}
