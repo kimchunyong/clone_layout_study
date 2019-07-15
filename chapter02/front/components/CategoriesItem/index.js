@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const CategoriesItem = () => {
-    return (
-        <div>
-            <img />
+import CategoriesTop from './Categories_top';
+import CategoriesList from './Categories_list';
+
+import styled from 'styled-components';
+
+const ListBox = styled.ul`
+    padding:0 15px;
+`
+
+class index extends Component {
+    render() {
+        return (
             <div>
-                <h2>목록</h2>
-                <p>1065 Items</p>
+                <CategoriesTop />
+                <ListBox>
+                    <CategoriesList />
+                    <CategoriesList />
+                    <CategoriesList />
+                </ListBox>
             </div>
-        </div> >
-    )
+        );
+    }
 }
+
+export default index;

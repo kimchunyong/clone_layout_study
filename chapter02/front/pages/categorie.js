@@ -3,14 +3,14 @@ import React from 'react';
 import ResetCss from '../static/resetCss';
 
 import Battery from '../components/battery';
-import Home from '../components/Home';
+import CategoriesItem from '../components/CategoriesItem';
 
 const App = () => {
     return (
         <div>
             <ResetCss />
             <Battery />
-            <Home/>
+            <CategoriesItem />
         </div>
     )
 }
