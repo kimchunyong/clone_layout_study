@@ -46,6 +46,7 @@ const CategorieTit = styled.h2`
 const CategorieTxt = styled.p`
     font-size: 15px;
     color:rgba(0, 0, 0, 0.4);
+
 `
 
 const CategoriesList = () => {

@@ -20,6 +20,7 @@ class index extends Component {
                     <CategoriesList />
                 </ListBox>
             </div>
+
         );
     }
 }
