@@ -1,7 +1,21 @@
+import Header from '../components/Header';
+import OurStory from '../components/OurStory';
+import InJoy from '../components/InJoy';
+import Favorite from '../components/Favorite';
+import Device from '../components/Device';
+import Faq from '../components/Faq';
+import Footer from '../components/Footer';
+
 const Index = () => {
     return (
         <div>
-            <h1>넷플릭스 클론코딩하기</h1>
+            <Header/>
+            <OurStory/>
+            <InJoy/>
+            <Favorite/>
+            <Device/>
+            <Faq/>
+            <Footer/>
         </div>
     )
 }
